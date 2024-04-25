@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #002171;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-position: right;
+    padding: 1em;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header a:link {
+    color: #ffffff;
+}
+
+header a:visited {
+    color: #ffffff;
+}
+
+header a:hover {
+    color: #90C7E3;
+}
+
+header a:active {
+    color:#DDDDDD;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #1976D2;
+}
+
+h3 {
+    color: #000033;
+}
+
+nav {
+    font-weight: bold;
+    text-align: center;
+    background-color: #FFFFFF;
+    line-height: .35em;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    padding: 1.5em .5em 1.5em .5em; /*I changed the padding coz it looks too high for top and bottom with 5em each*/
+    width: 100%;
+    border-bottom: solid 1px #344873;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:link {
+    color: #5C7FA3;
+}
+
+nav a:visited {
+    color:#344873;
+}
+
+nav a:hover {
+    color: #A52A2A;
+}
+
+nav a:active {
+    color: #000000;
+}
+
+main {
+    padding: 0 1em 0 1em;
+}
+
+#homehero { /*This is the css for homehero*/
+    background-image: url(images/coast.jpg);
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#yurthero {
+    background-image: url(images/yurt.jpg);
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#trailhero {
+    background-image: url(images/trail.jpg);
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #666666;
+    margin: 0;
+}
+
+dt {
+    font-weight: bold;
+    color: #002171;
+}
+
+.resort {
+    font-size: 1.2em;
+    color: #1976D2;
+}
+
+footer {
+    font-size: .7em;
+    font-style: italic;
+    text-align: center;
+    padding: 1em;
+    background-color: #FFFFFF;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+#wrapper {
+    background-color: #ffffff;
+}
+
+#mobile {
+    display: inline;
+}
+
+#not-mobile {
+    display: none;
+}
+
+@media only screen and (min-width: 600px){
+    /*The CSS will work ONLY IF the screen size is greater than 600px */
+    h1{
+        font-size: 2em;
+        letter-spacing: .25em;
+    }
+ }
+
+ @media only screen and (min-width: 1024px){
+    /*The CSS will work ONLY IF the screen size is greater than 1024px */
+    nav ul {
+        max-width: 1024px;
+        margin: 0 auto;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        padding-right: 2em;
+    }
+
+    nav li {
+        width: 12em;
+        border-bottom: none;
+    }
+
+    main {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+        width: 80%;
+        background-color: #FFFFFF;
+    }
+
+    #mobile {
+        display: none;
+    }
+
+    #not-mobile {
+        display: inline;
+    }
+
+}
+    
+    
